@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+	<h1>YouTubeの動画ダウンロードしてみたくない？そんな人のためにこれを作ってみたから良かったら使ってみて</h1>
+	<form action="/" method="POST">{% csrf_token %}
+		<label for="exampleFormControlInput1">数字を入力してね</label>
+		<input type="number" name="num" class="form-control">
+		<label for="exampleFormControlInput1">ダウンロードしたいYouTubeの動画のurlを入力してね</label>
+		<input type="text" name="url" class="form-control">
+		<br />
+		<button class="btn btn-primary mb-2">submit</button>
+	</form>
+
+</div>
+
+{% endblock content %}
