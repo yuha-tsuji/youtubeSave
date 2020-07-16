@@ -1,0 +1,5 @@
+Django>=2.2
+psycopg2-binary>=2.8
+django-environ==0.4.5
+requests==2.24.0
+pytube3==9.6.4
